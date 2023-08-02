@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <title>About</title>
+    <meta charset="utf-8">
+
+    <!-- 사이트 메타 태그 -->
+    <meta name="description" content="Polygon website">
+    <meta name="keywords" content="Polygon, Polygon Career, Polygon Career Counselling, Career, Counselling, Guidance, School Counselling, Career Success">
+    <meta name="author" content="Polygon">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+
+    <!-- 브라우저 css 링크 -->
+    <link rel="stylesheet" type="text/css" href="../css/destyle.css"> <!-- 초기화 링크 -->
+    <link rel="stylesheet" type="text/css" href="../css/about.css"> <!-- work css -->
+    <link rel="stylesheet" type="text/css" href="../css/common.css"> <!-- base css -->
+    <link rel="stylesheet" type="text/css" href="../css/font.css"> <!-- 폰트 링크 -->
+
+    <!-- 파비콘 링크 -->
+    <link rel="shorcut icon" href="../img/main//favicon.ico">
+    <link rel="icon" href="../img/main/favicon.ico">
+
+<script>
+
+/* 변수 선언 */
+var header_state = 0; /* 헤더 보이기 상태 */
+var border_state = 0; /* 보더 보이는 상태*/
+
+function borderShow(){
+    if (border_state == 0 && document.body.clientWidth > 767){
+        document.getElementById("border_s").style = "border-top:90px solid #f4f4f4; border-left:50px solid #f4f4f4; border-right:50px solid #f4f4f4; border-bottom:50px solid #f4f4f4;"
+        border_state = 1;
+    }
+    
+}
+function borderHide(){
+    if (border_state == 1 && header_state == 0 && document.body.clientWidth > 767){
+        document.getElementById("border_s").style = "border-top:0px solid #f4f4f4; border-left:0px solid #f4f4f4; border-right:0px solid #f4f4f4; border-bottom:0px solid #f4f4f4;"
+        border_state = 0;
+    }
+}
+
+function logoClick() {
+    
+    if (document.body.clientWidth > 767){
+
+if (header_state == 0) {document.getElementById("home_header").style.height = "440px";
+document.getElementById("main").style = "padding-top:440px";
+document.getElementById("hugeinc_logo").style.display = "none";
+document.getElementById("hugeinc_logo_m").style.display = "flex";
+
+header_state = 1;
+} /* 헤더 visible 상태로 기억 */
+
+else {document.getElementById("home_header").style.height = "0px";
+document.getElementById("main").style = "padding-top:0px";
+document.getElementById("hugeinc_logo").style.display = "flex";
+document.getElementById("hugeinc_logo_m").style.display = "none";
+header_state = 0;
+} /* 헤더 hidden 상태로 기억 */
+}
+
+else { if (header_state == 0) {document.getElementById("home_header").style.height = "80vh";
+document.getElementById("main").style = "padding-top:440px";
+document.getElementById("hugeinc_logo").style.display = "none";
+document.getElementById("hugeinc_logo_m").style.display = "flex";
+header_state = 1;
+} /* 헤더 visible 상태로 기억 */
+
+else {document.getElementById("home_header").style.height = "0px";
+document.getElementById("main").style = "padding-top:0px";
+document.getElementById("hugeinc_logo").style.display = "flex";
+document.getElementById("hugeinc_logo_m").style.display = "none";
+header_state = 0;
+}
+
+}
+}
+
+</script>
+
+</head>
+
+
+<body>
+<!-- logo -->
+<div id="hugeinc_logo" onclick="logoClick()">
+    <div>P</div>
+</div>
+<div id="hugeinc_logo_m" onclick="logoClick()">
+    <div id="logo_text">Polygon</div>
+</div>
+
+<!--header-->
+<header id="home_header">
+    <nav class="gnb_wrap"> 
+        <ul class="menu_wrap"> <!-- 메뉴 ul 시작-->
+            <li>
+                <a href="../index.html" class="h3_sans">Hello.</a>
+                <div class="hr_m"></div>
+                <p class="p_small_sans">Today at Polygon.</p>
+                <div class="hr_origin"></div>
+            </li>
+
+            <li>
+                <a href="about/about.html" class="h3_sans">About.</a>
+                <div class="hr_m"></div>
+                <p class="p_small_sans">Who we are.</p>
+                <div class="hr_origin"></div>
+            </li>
+
+            <li>
+                <a href="../contact/contact.html" class="h3_sans">Contact.</a>
+                <div class="hr_m"></div>
+                <p class="p_small_sans">Get in touch</p>
+                <div class="hr_origin"></div>
+            </li>
+        </ul>
+        <!-- 메뉴 ul 끝-->
+
+
+
+    </nav>
+
+</header>
+<!--header-->
+
+<!--main section -->
+<main id="main">
+
+<section class="hero hero_about">
+    <h1 class="hero_title color_white">Your Dreams, Our Mission</h1>
+</section>
+
+
+<section class="about_us">
+
+    <div class="about_us_container">
+
+        <div class="section_subtitle">
+            <hr class="section_subtitle_rule_black">
+            <h6>About us.</h6>
+        </div>
+
+        <div class="about_us_section_content">
+            <h2 class="about_us_title h3_serif">We help individuals choose the careers through transformative experiences they love.</h2>
+            <p class="about_us_text">Today, people embrace companies with the customer experiences that best meet their needs. Huge transforms companies by designing these best-in-class experiences, driven by strong creative and rooted in the technology, data, and organizational strategy required for operational excellence. We combine these capabilities into a single solution, creating unified brand experiences that change industries and foster meaningful relationships with users. This user-centric approach has made us the fastest-growing agency of the past decade.</p>
+        </div>
+    </div>
+</section>
+<!--how we do it / our service-->
+<section class="our_service">
+
+    <div class="our_service_container">
+            
+        <div class="section_subtitle_nopadding">
+                    <hr class="section_subtitle_rule_white">
+                    <h6 class="color_white">How we do it.</h6>
+        </div>
+
+        <div class="our_service_content_container">
+                <div class="our_service_content">
+                    <h4 class="our_service_content_title color_white">A unified experience.</h4>
+
+<!--                    <p class="our_service_content_text color_white">Lean, interdisciplinary teams work in close collaboration with clients, helping them to solve
+                        their user’s biggest problems. Our user-centric, data-driven approach focuses on creating a seamless experience across all digital, physical
+                        and communications touchpoints. This unified brand experience results in a much more consistent, impactful, and valuable relationship with the user
+                    </p> -->
+                    <p class="our_service_content_text color_white">At Polygon, we believe in fostering a unified experience for our clients, students and parents. Our approach revolves around assembling lean, interdisciplinary
+                        teams that work closely with individuals, aiding them in finding the right career and solving their most significant career challenges. With a strong
+                        user-centric and data-driven foundation, we aim to craft a seamless journey across all digital, physical, and communication touchpoints. By doing so,
+                        we ensure a consistent, impactful, and valuable relationship with each individual we serve.</p>
+                </div>
+
+                <div class="our_service_infographic">
+                    <img class="our_service_infographic_img" src="../img/about/diagram.png">
+                </div>
+
+        </div>
+
+    </div>
+
+    <div class="our_service_list_container color_white">
+            <ul class="our_service_list">
+                <h6>Strategy.</h6>
+                <li><p><a>Business Consulting</a></p></li>
+                <li><p><a>Innovation</a></p></li>
+                <li><p><a>Branding</a></p></li>
+                <li><p><a>Data Science</a></p></li>
+                <li><p><a>Research</a></p></li>
+            </ul>
+
+            <ul class="our_service_list">
+                <h6>Product.</h6>
+                <li><p><a>Experience Design</a></p></li>
+                <li><p><a>Physical Design</a></p></li>
+                <li><p><a>Service Design</a></p></li>
+                <li><p><a>Technology</a></p></li>
+                <li><p><a>Search Optimization</a></p></li>
+            </ul>
+
+            <ul class="our_service_list">
+                <h6>Marketing.</h6>
+                <li><p><a>Campaigns</a></p></li>
+                <li><p><a>Content</a></p></li>
+                <li><p><a>Social & PR</a></p></li>
+                <li><p><a>Media</a></p></li>
+                <li><p><a>CRM</a></p></li>
+            </ul>
+
+    </div>
+
+</section>
+
+<!--made with love / our_culture-->
+<section class="our_culture">
+    <div class="our_culture_container">
+        <div class="section_subtitle_nopadding">
+            <hr class="section_subtitle_rule_black">
+            <h6>Made with love.</h6>
+        </div>
+        <div class="our_culture_title"><h2>A culture of innovation.</h2></div>
+    
+
+        <ul class="our_culture_list">
+            <li>
+                <h5><a>Schools.</a></h5>
+                <p>Guiding and developing the next generation of digital leaders.</p>
+            </li>
+            <li>
+                <h5><a> Café.</a></h5>
+                <p>Brewing great coffee and stroming big ideas.</p>
+            </li>
+            <li>
+                <h5><a>Social Change.</a></h5>
+                <p>Partnering with non-profits for social impact.</p>
+            </li>
+            <li>
+                <h5><a>Xpress.</a></h5>
+                <p>Our publication for people who care about design and technology.</p>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+
+            
+        </ul>
+    </div>
+
+
+</section>
+
+
+
+<!--our leadership-->
+<section class="our_leadership">
+    <div class="our_leadership_container">
+        <div class="section_subtitle_nopadding">
+            <hr class="section_subtitle_rule_black">
+            <h6>Our leadership.</h6>
+        </div>
+
+        <ul class="our_leadership_list">
+            <li>
+                <h5><a>Akshat Vyavahare</a></h5>
+                <p class="color_black_opacity">Founder</p>
+            </li>
+<!--            <li>
+                <h5><a>Raj Singhal</a></h5>
+                <p class="color_black_opacity">COO & CFO</p>
+            </li>
+
+            <li>
+                <h5><a>Jacque Jordan</a></h5>
+                <p class="color_black_opacity">Head of Research</p>
+            </li>-->
+            <li>
+                
+            </li>
+        </ul>
+    </div>
+</section>
+</main>
+
+
+
+
+
+<!-- footer 시작-->
+<footer class="home_footer bg_color_black color_white">
+
+<ul>
+    <li class="footer_content_left">
+        <a title="https://polygonx.com">PolygonX</a>
+        <p>Do something you love.</p>
+    </li>
+
+
+    <li class="footer_content_right">
+
+        <div>
+            <a href="hello.html">Hello</a>
+            <a href="About.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+<!--        <p class="footer_aside color_c8c8c8">©2022 PolygonX<br>
+            CCPA Privacy<br>
+            Modern Slaavery Act Statement
+        </p>-->
+    </li>
+</ul>
+
+</footer>
+<!-- footer 끝-->
+</body>
+
+</html>

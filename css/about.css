@@ -1,0 +1,146 @@
+/* about_us */
+.hero_about{background-image: url(../img/about/bridge.jpg);}
+.hero_title {width: 74.68354%; height: calc(80vh - 200px); display: flex; flex-direction: column; justify-content: flex-end; margin: 0 auto; box-sizing: border-box; letter-spacing: normal;}
+
+/* about_hero */
+.about_us {width: 100%; background-color: white; padding: 140px 0; box-sizing: border-box;}
+.about_us_container {width: 74.68354%; margin: 0 auto; display: flex;}
+    .section_subtitle {width: 32.20339%; padding-top: 14px; box-sizing: border-box;}
+    .section_subtitle_nopadding {width: 32.20339%; margin-bottom: 60px;}
+    .section_subtitle_rule_black {width: 47.36842%; border-top: 1px solid black; margin-bottom: 20px;}
+    .section_subtitle_rule_white {width: 47.36842%; border-top: 1px solid white; margin-bottom: 20px;}
+.about_us_section_content {width: 66.10169%; margin-left: 1.69492%;}
+    .about_us_title {margin-bottom: 70px;}
+    .about_us_text {padding-bottom: 25px; box-sizing: border-box;}
+
+/* our_service*/
+.our_service {width: 100%; background-color: black; padding: 140px 0; box-sizing: border-box;}
+.our_service_container {width: 74.68354%; margin: 0 auto;}
+.our_service_content_container {width: 100%; display: flex;}
+.our_service_content {width: 57.62712%;}
+.our_service_content_title {margin-bottom: 50px;}
+.our_service_infographic { width: 32.20339%; min-width: 400px; margin-left: 5%; padding-bottom: 25px;}
+.our_service_infographic_img {max-width: 100%; padding: 2% 0 0 5%;}
+.our_service_content_text {column-count: 2;}
+
+.our_service_list_container {width: 74.68354%; margin: 0 auto; display: flex; flex-wrap: wrap; padding-top: 60px;}
+.our_service_list {width: 32.20339%;}
+.our_service_list h6 {margin-bottom: 40px;}
+.our_service_list li {padding: 0 0 20px 0; margin: 0 15% 20px 0; border-bottom: 1px solid #222;}
+.our_service_list :nth-child(6) {border: none; margin-bottom: 0;}
+.our_service_list a:hover {color: #ea178c; transition: all 0.4s; cursor: pointer;}
+
+/* Made with love*/
+.our_culture {width: 100%; background-color: #cecdcf; padding: 140px 0; box-sizing: border-box; position: relative;}
+.our_culture_container {width: 74.68354%; margin: 0 auto;}
+.our_culture_title {margin-top: 120px; padding-bottom: 100px;}
+.our_culture_list {width: 100%; display: flex; flex-wrap: wrap; position: relative; z-index: 2;}
+.our_culture_list li {width: 23.72881%; min-height: 160px; margin-left: 1.6949%; margin-bottom: 40px;}
+.our_culture_list li:nth-child(4n+1) {margin-left: 0;}
+.our_culture_list h5 {margin-bottom: 7px;}
+.our_culture_list p {width: 85%;}
+.our_culture_list a:hover {color: #ea178c; cursor: pointer;}
+.our_culture_background {position: absolute; width: 40%; bottom: -6vh; right: 10%;}
+.our_culture_background img {width: 100%;}
+
+/*our office*/
+.our_office {width: 100%; background-color: black;}
+.our_office_container {width: 74.68354%; margin: 0 auto; padding:140px 0;}
+.our_office_list {width: 100%; display: flex; flex-wrap: wrap;}
+.our_office_list li { width: 23.72881%; border-top: 1px solid rgb(77, 77, 77);  padding-top: 20px; margin-left: 1.69492%; margin-bottom: 25px;}
+.our_office_list :nth-last-child(4n+1) {margin-left: 0;}
+.our_office_list li a {color: white;}
+.our_office_list li a:hover {color: #ea178c; cursor: pointer;}
+.our_office_list li p {color: white; opacity: 0.5;}
+
+/*our leadership*/
+.our_leadership {width: 100%;}
+.our_leadership_container {width: 74.68354%; margin: 0 auto; padding: 140px 0;}
+.our_leadership_list {width: 100%; display: flex; flex-wrap: wrap; padding-top: 10px;}
+.our_leadership_list li {padding-top: 40px; margin-bottom: 40px; width: 30%; right: 15px; margin-left: 1.69492%;}
+.our_leadership_list li:nth-child(3n+1) {margin-left: 0;}
+.our_leadership_list li:nth-child(n+4) {border-top: 1px solid rgba(0, 0, 0, 0.2); right: 3.38983%;}
+.our_leadership_list li:last-child {border: none;}
+
+.our_leadership_list li a:hover {color: #ea178c; transition: all 0.3s; cursor: pointer;}
+
+
+
+/* work 05 */
+.about_latest_news {background-image: url(../img/about/collecting_img.png);}
+
+
+@media screen and (max-width:999px) {
+    .hero_title {font-size: 104px; width: 83.05085%; line-height: 106px;}
+    .about_us {padding: 100px 0;}
+    .about_us_container {flex-direction: column; width: 83.05085%;}
+    .about_us_section_content {width: 100%; margin-left: 0;}
+    .about_us_section_content h2 {font-size: 42px; margin-bottom: 50px; letter-spacing: -1px; line-height: 53.9998px;}
+    .section_subtitle {margin-bottom: 50px; width: 48.97959%; padding: 0;}
+    .section_subtitle_rule_black {width: 37.5%;}
+    .section_subtitle h6 {font-size: 16px;}
+    .section_subtitle_nopadding {width: 48.97959%; margin-bottom: 50px;}
+    .section_subtitle_nopadding h6 {font-size: 16px; }
+    .our_service {padding: 100px 0 60px;}
+    .our_service_content_container {flex-direction: column;}
+    .our_service_content {width: 100%; margin-bottom: 70px;}
+    .our_service_content_text {width: 100%; column-count: auto; padding: 25px 0;}
+    .our_service_infographic_img {max-width: 480px;}
+    .our_service_list_container  {flex-direction: column;}
+    .our_service_list { width: 66.10169%;}
+    .our_service_list :nth-child(6) {margin-bottom: 40px;}
+    .our_culture {padding: 100px 0 60px;}
+    .our_culture_container {width: 83.05085%;}
+    .our_culture_title {margin: 0;}
+    .our_culture_title h2 {font-size: 72px;}
+    .our_culture_list li {width: 48.97959%; margin-left: 0; min-height: 0;}
+    .our_culture_list li:nth-child(2n) {margin-left: 2.04082%;}
+    .our_office_container {width: 83.05085%}
+    .our_office_list li {width: 48.97959%; margin-left: 0;}
+    .our_office_list li:nth-child(2n) {margin-left: 2.04082%}
+    .our_leadership_container { width: 83.05085%;}
+    .our_leadership_list li h5 {font-size: 21px; line-height: 27.9999px;}
+    .our_leadership_list :first-child {border-top: 0;}
+    .our_leadership_list li {margin-bottom: 25px; padding-top: 20px; margin-left: 0; width: 32%;}
+    .our_leadership_list { justify-content: space-between;}
+}
+
+@media screen and (max-width:768px) {
+    .hero_title {font-size: 60px; width: 83.05085%; line-height: 60px; width: 74.35897%;}
+    .section_subtitle_rule_white {width: 37.5%;}
+    .section_subtitle_rule_black {width: 37.5%;}
+    .section_subtitle_nopadding h6 {font-size: 14px;}
+    .about_us {padding: 60px 0;}
+    .about_us_container {width: 74.35897%;}
+    .about_us_section_content h2 {font-size: 30px; line-height: 42px;}
+    .section_subtitle {padding-top: 0; width: 82.75862%;}
+    .section_subtitle h6 {font-size: 14px;}
+    .our_service {padding: 60px 0;}
+    .our_service_container {padding-bottom: 60px;}
+    .our_service_content {margin-bottom: 0px;}
+    .our_service_content_title {font-size: 40px; line-height: 44px; letter-spacing: normal;}
+    .our_service_list {width: 100%;}
+    .our_service_list h6 {margin-bottom: 20px; font-size: 19px;}
+    .our_service_list li {margin: 0 15% 10px 0; padding: 0 0 10px 0;}
+    .our_service_list li p {line-height: 28.0001px;}
+    .our_service_infographic {margin: 0 auto 30px auto; max-width: 480px; min-width: 0; width:100%; padding: 0;}
+    .our_service_infographic_img {padding: 0; max-width: 100%;}
+    .our_culture {padding: 60px 0 20px;}
+    .section_subtitle_nopadding {width: 82.75862%;}
+    .our_culture_container {width: 74.68354%;}
+    .our_culture_title {padding-bottom: 40px;}
+    .our_culture_title h2 {font-size: 40px; line-height: 44px; letter-spacing: -1px;}
+    .our_culture_list li {width: 100%;}
+    .our_culture_list li h5 {font-size: 19px; line-height: 26px;}
+    .our_culture_list li:nth-child(2n) {margin-left: 0;}
+    .our_culture_list li:nth-child(8), .our_culture_list li:nth-child(10),.our_culture_list li:nth-child(11), .our_culture_list li:nth-child(12) {display: none;}
+    .our_culture_background {display: none;}
+    .our_office_container {padding: 60px 0; width: 74.68354%;}
+    .our_office_list li {width: 100%;}
+    .our_office_list li:nth-child(2n) {margin-left: 0}
+    .our_office_list li h5 {font-size: 19px; line-height: 26px;}
+    .our_leadership_list li {width: 100%; border-top: 1px solid rgba(0, 0, 0, 0.2); right: 0%; margin-left: 0;}
+    .our_leadership_list li h5 {font-size: 19px; line-height: 26px;}
+    .our_leadership_container {padding: 60px 0; width: 74.68354%;}
+    .our_leadership_list li:last-child {display: none;}
+}

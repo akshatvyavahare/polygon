@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>Polygon</title>
+    <meta charset="utf-8">
+    
+    <!-- 사이트 메타 태그 -->
+    <meta name="description" content="Polygon website">
+    <meta name="keywords" content="Polygon, Polygon Career, Polygon Career Counselling, Career, Counselling, Guidance, School Counselling, Career Success">
+    <meta name="author" content="Polygon">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    
+    <!-- 브라우저 css 링크 -->
+    <link rel="stylesheet" type="text/css" href="css/destyle.css"> <!-- 초기화 링크 -->
+    <link rel="stylesheet" type="text/css" href="css/home.css"> <!-- Home 화면 css -->
+    <link rel="stylesheet" type="text/css" href="css/common.css"> <!-- common css -->
+    <link rel="stylesheet" type="text/css" href="../css/atl.css"> <!-- work css -->
+    <link rel="stylesheet" type="text/css" href="css/font.css"> <!-- 폰트 링크 -->
+    
+    <!-- 파비콘 링크 -->
+    <link rel="shorcut icon" href="img/main/favicon.ico">
+    <link rel="icon" href="img/main/favicon.ico">
+
+<script>
+
+/* 변수 선언 */
+var header_state = 0; /* 헤더 보이는 상태 */
+var border_state = 0; /* 보더 보이는 상태*/
+
+function borderShow(){
+    if (border_state == 0 && document.body.clientWidth > 767){
+        document.getElementById("border_s").style = "border-top:90px solid #f4f4f4; border-left:50px solid #f4f4f4; border-right:50px solid #f4f4f4; border-bottom:50px solid #f4f4f4;"
+        border_state = 1;
+    }
+    
+}
+function borderHide(){
+    if (border_state == 1 && header_state == 0 && document.body.clientWidth > 767){
+        document.getElementById("border_s").style = "border-top:0px solid #f4f4f4; border-left:0px solid #f4f4f4; border-right:0px solid #f4f4f4; border-bottom:0px solid #f4f4f4;"
+        border_state = 0;
+    }
+}
+
+
+function logoClick() {
+    
+if (document.body.clientWidth > 767){
+
+        if (header_state == 0) {  
+        
+        document.getElementById("home_header").style.height = "440px";
+        document.getElementById("main").style = "padding-top:440px";
+        document.getElementById("hugeinc_logo").style.display = "none";
+        document.getElementById("hugeinc_logo_m").style.display = "flex";
+
+        header_state = 1;
+
+        document.getElementById("border_s").style = "border-top:90px solid #f4f4f4; border-left:50px solid #f4f4f4; border-right:50px solid #f4f4f4; border-bottom:0px solid #f4f4f4;"
+
+        } /* 헤더 visible 상태로 기억 */
+        
+        else {document.getElementById("home_header").style.height = "0px";
+        document.getElementById("main").style = "padding-top:0px";
+        document.getElementById("hugeinc_logo").style.display = "flex";
+        document.getElementById("hugeinc_logo_m").style.display = "none";
+        header_state = 0;
+
+        document.getElementById("border_s").style = "border-top:90px solid #f4f4f4; border-left:50px solid #f4f4f4; border-right:50px solid #f4f4f4; border-bottom:50px solid #f4f4f4;"
+        } /* 헤더 hidden 상태로 기억 */
+
+    }
+    
+    else { if (header_state == 0) {document.getElementById("home_header").style.height = "80vh";
+        document.getElementById("main").style = "padding-top:440px";
+        document.getElementById("hugeinc_logo").style.display = "none";
+        document.getElementById("hugeinc_logo_m").style.display = "flex";
+        header_state = 1;
+        } /* 헤더 visible 상태로 기억 */
+        
+        else {document.getElementById("home_header").style.height = "0px";
+        document.getElementById("main").style = "padding-top:0px";
+        document.getElementById("hugeinc_logo").style.display = "flex";
+        document.getElementById("hugeinc_logo_m").style.display = "none";
+        header_state = 0;
+ 
+        }
+
+    }
+}
+
+</script>
+
+</head>
+
+
+<body>
+<!-- logo -->
+<div id="hugeinc_logo" onclick="logoClick()" onmouseover="borderShow()" onmouseout="borderHide()">
+    <div id="logo_text">P</div>
+</div>
+<div id="hugeinc_logo_m" onclick="logoClick()">
+    <div id="logo_text">Polygon</div>
+</div>
+
+<a id="border_s"></a>
+
+<!--header 시작-->
+<header id="home_header">
+    <nav class="gnb_wrap"> 
+        <ul class="menu_wrap"> <!-- 메뉴 ul 시작-->
+            <li>
+                <a href="index.html" class="h3_sans">Hello.</a>
+                <div class="hr_m"></div>
+                <p class="p_small_sans">Today at Polygon.</p>
+                <div class="hr_origin"></div>
+            </li>
+
+            <li>
+                <a href="about/about.html" class="h3_sans">About.</a>
+                <div class="hr_m"></div>
+                <p class="p_small_sans">Who we are.</p>
+                <div class="hr_origin"></div>
+            </li>
+
+            <li>
+                <a href="contact/contact.html" class="h3_sans">Contact.</a>
+                <div class="hr_m"></div>
+                <p class="p_small_sans">Get in touch</p>
+                <div class="hr_origin"></div>
+            </li>
+        </ul> <!-- 메뉴 ul 끝-->
+
+        <div class="gnb_aside">
+            <p>Unlock the future you</p>
+            <a>MAGENTA<span>.</span></a>
+        </div>
+
+    </nav>
+
+</header>
+<!--header -->
+
+<main id="main">
+<section > <!-- Home section -->
+    <div class="main_home_wrap" id="hello_wrap">
+        <div class="main_home_title">
+            <h2>Unlock the future you.</h2>
+            <h2>Unlock the future you.</h2>
+        </div>
+        <div class="main_home_content_wrap">
+            <div>Today at Polygon.</div>
+            <div></div>
+        </div>
+    </div>
+</section> <!-- Home section -->
+
+    <section id="home_3"> <!-- page 3 시작 -->
+
+    <ul class="home_section_wrap home_img_03"> <!-- home_section_wrap -->
+
+        <li class="home_section_index"> <!--home_section_index 시작-->
+            <div class="home_section_index_wrap">
+                <p class="color_black">01.</p>
+                <div class="border_line_black"></div>
+                <p class="color_black home_section_index_m"></p>
+            </div>
+        </li> <!--home_section_index 끝-->
+
+        <li class="home_section_contents"> <!-- home_section_contents_시작 -->
+            <div class="home_section_contents_wrap">
+                <div class="color_black content_title"></div>
+                <div class="home_section_contents_subwrap">
+                    <h2 class="color_black">
+                        <a href="https://www.campaignlive.com/article/huge-elevates-matt-weiss-brooklyn-president/1674393" target="_blank">Feel confident in your next career move with the insights and data you need.
+                        </a>
+                    </h2>
+                    <div class="border_line_black"></div>
+                    <p class="color_black">Described as “shockingly accurate,” we’ve helped many individuals find their ideal careers.</p>
+                </div>
+            </div>
+        </li> <!-- home_section_contents_끝 -->
+
+    <li class="home_section_detail"> </li> <!-- home_section_aside -->
+
+
+    </ul>
+
+
+</section> <!-- page 3 끝 -->
+
+<!-- page 1 -->
+<section id="home_1"> <!-- page 1  -->
+    
+    <ul class="home_section_wrap home_img_01"> <!-- home_section_wrap_-->
+            
+        <li class="home_section_index"> <!--home_section_index -->
+            <div class="home_section_index_wrap">
+                <p class="color_black">02.</p>
+                <div class="border_line_black"></div>
+                <p class="color_black home_section_index_m">What we do.</p>
+            </div>
+        </li> <!--home_section_index 끝-->
+
+        <li class="home_section_contents"> <!-- home_section_contents_시작 -->
+            <div class="home_section_contents_wrap">
+                <div class="color_black content_title"></div>
+
+                <div class="home_section_contents_subwrap">
+                    <h4 class="color_black">
+                        <a href="https://www.campaignlive.com/article/digital-innovation-agency-2019-huge/1672213" target="_blank"></a>
+                    </h4>
+                    <div class="border_line_black"></div>
+                    <p class="color_black">We help individuals find, work toward, and achieve their ideal careers each year — from bright students trying to pave their education paths to individuals looking for career changes. We empower people to make their best next moves.</p>
+                    <!--<p class="color_white">India is perceived as a counselling- deficit sector where over 93% schools do not have a professional counsellor on board. Apart from the usual pressures of competition, the increasing complexity of career choices and disruptive technologies in the volatile job market have made career choices a major challenge for both students and parents. </p>-->
+                </div>
+            </div>
+        </li> <!-- home_section_contents_끝 -->
+
+        <li class="home_section_aside"></li> <!-- home_section_aside -->
+
+    </ul> <!-- home_section_wrap_끝 -->
+    
+</section><!-- page 1 끝 -->
+
+
+<section id="home_2"> <!-- page 2 시작 -->
+    
+    <ul class="home_section_wrap home_img_02"> <!-- home_section_wrap -->
+    
+        <li class="home_section_index"> <!--home_section_index 시작-->
+            <div class="home_section_index_wrap">
+                <p class="color_white ">02.</p>
+                <div class="border_line_white"></div>
+                <p class="color_white home_section_index_m"></p>
+            </div>
+        </li> <!--home_section_index 끝-->
+        
+        <li class="home_section_contents"> <!-- home_section_contents_시작 -->
+            <div class="home_section_contents_wrap">
+                <div class="color_white content_title"></div>
+                    <div class="home_section_contents_subwrap ">
+                        <h2 class="color_white">
+                            <a href="" target="_blank">Success</h2>
+                       <!-- <h2 class="color_white">
+                            <a href="https://www.adweek.com/creativity/how-do-you-highlight-the-frustration-of-tampon-dispensers-make-men-pay-for-toilet-paper/" target="_blank">India needs 15 lakh counsellors for 315 million students</a>
+                        </h2> -->
+                        <div class="border_line_white "></div>
+                        <p class="color_white">The definition of "Success" is highly personal. Traditional paths don't work for everyone. We create tools that reflect the many options people have, and we remove the subjectivity about the career desirability in our assessment. After all, what may be an undesirable career for one person is someone else's perfect match.</p>
+<!--                        <p class="color_white">India needs 15 lakh counsellors for 315 million students</p>
+                    </div>
+            </div>
+        </li> <!-- home_section_contents_끝 -->
+        
+        <li class="home_section_aside"></li> <!-- home_section_aside -->
+
+    </ul> <!-- home_section_wrap_끝 -->
+</section> <!-- page 2 끝 -->
+
+<!-- page 5 -->
+<section id="home_5"> <!-- page 5 시작 -->
+    
+    <ul class="home_section_wrap home_img_05"> <!-- home_section_wrap -->
+        
+        <li class="home_section_index"> <!--home_section_index 시작-->
+            <div class="home_section_index_wrap">
+                <p class="color_black ">05.</p>
+                <div class="border_line_black "></div>
+                <p class="color_black home_section_index_m">Leadership.</p>
+            </div>
+        </li> <!--home_section_index 끝-->
+
+        <li class="home_section_contents"> <!-- home_section_contents_시작 -->
+            <div class="home_section_contents_wrap">
+                <div class="color_black content_title">.</div>
+                <div class="home_section_contents_subwrap">
+                    <h2 class="color_black">
+                        <a href="https://www.adweek.com/agencyspy/huge-hires-r-ga-vet-to-fill-chief-design-officer-role/161097/" target="_blank">Want to talk through launching a career for the first time?</a>
+                    </h2>
+                    <div class="border_line_black"></div>
+                    <p class="color_black">Our assessments, blends psychometrics and AI to help individuals learn how their traits, talents, interests, and values align with different careers and degrees.</p>
+                </div>
+            </div>
+        </li> <!-- home_section_contents_끝 -->
+</section>
+<!--call to action-->
+<section class="call_to_cation">
+
+    <div class="call_to_action_container">
+        <h3 class="h3_serif color_black">Ready to get started?</h3>
+        <p>Find the right career for you, based on your experience and interests. Get the career services you need to land a job, because education is just one piece of the job search puzzle</p>
+        <a href="./contact/contact.html">
+            <h5 class="color_white">Book a Demo</h5>
+        </a>
+    </div>
+
+</section>
+    <li class="home_section_aside" ></li> <!-- home_section_aside -->
+
+
+    </ul>
+
+
+</section> <!-- page 5 끝 -->
+
+
+
+
+
+<!-- footer 시작-->
+<footer class="home_footer bg_color_black color_white">
+
+<ul>
+    <li class="footer_content_left">
+        <a title="https://polygonx.com">PolygonX</a>
+        <p>Do something you love.</p>
+    </li>
+
+
+    <li class="footer_content_right">
+
+        <div>
+            <a href="hello.html">Hello</a>
+            <a href="About.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+<!--        <p class="footer_aside color_c8c8c8">©2022 PolygonX<br>
+            CCPA Privacy<br>
+            Modern Slaavery Act Statement
+        </p>-->
+
+    </li>
+</ul>
+
+</footer>
+<!-- footer 끝-->
+</body>
+
+</html>
